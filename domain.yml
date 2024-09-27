@@ -1,0 +1,30 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_nutrition
+  - ask_exercises
+  - ask_care
+  - ask_doctor_convo
+
+
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+
+  utter_ask_nutrition:
+    - text: "Sure, go ahead and ask me your nutrition-related question."
+
+  utter_ask_exercises:
+    - text: "Feel free to ask about exercises for pregnant women."
+
+  utter_ask_care:
+    - text: "Ask anything about how to take care during pregnancy."
+
+  utter_ask_doctor_convo:
+    - text: "You can ask any health-related question, and I'll do my best to provide information. Please note that I'm not a substitute for professional medical advice."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
